@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@0;1&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Iceland&family=Inconsolata:wdth,wght@127.5,900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+TC:wght@600&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  
+    
+
+    <title>Action Todo List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="start-page">
+            <div class="left-content">
+                <div class="title">
+                    <i class='bx bxs-message-rounded-check bx-tada bx-rotate-90' ></i>
+                    <h2>Action Todo List</h2>
+                </div>
+                <div class="left-content-img">
+                    <img src="./img/黃色.png" alt="" >
+
+                </div>
+            </div>
+            <!-- 登入 (首頁) -->
+            <div class="login-page">
+                <h2>行動清單輕鬆掌控</h2>
+                <ul>
+                    <li>
+                        <h5>Email</h5>
+                        <input type="email" class="login-email input-text" placeholder="請輸入Email" value="aaa@gmail.com">
+                    </li>
+                    <li>
+                        <h5>密碼</h5>
+                        <input type="password"  class="login-password input-text" placeholder="請輸入密碼" value="aaa123">
+                        <span></span>
+                    </li>
+                </ul>
+
+                <div>
+                    <input type="submit" class="login-login-btn"value="登入">
+                    <input type="button" class="login-reg-btn" value="註冊帳號">
+                </div>
+            </div>
+
+        <!-- 註冊頁面 -->
+            <div class="register-page">
+                <h2>註冊帳號</h2>
+                <ul>
+                    <li>
+                        <h5>Email</h5>
+                        <input type="email" class="reg-email input-text" placeholder="請輸入Email">
+                    </li>
+                    <li>
+                        <h5>您的暱稱</h5>
+                        <input type="text" class="reg-nickname input-text" placeholder="請輸入您的暱稱">
+                    </li>
+                    <li>
+                        <h5>密碼</h5>
+                        <input type="password"  class="reg-password input-text" placeholder="請輸入密碼">
+                        <span></span>
+                    </li>
+                    <li>
+                        <h5>再次輸入密碼</h5>
+                        <input type="password" class="reg-password-again input-text" placeholder="請輸入密碼">
+                    </li>
+                </ul>
+                <div>
+                    <input type="submit" class="reg-btn" value="註冊帳號">
+                    <input type="button" class="reg-login-btn"value="登入">
+                </div>
+            </div>
+        </div>
+
+        <!-- todo清單頁面 -->
+        <div class="todo-page">
+            <div class="todo-header">
+                <div class="todo-header-left">
+                    <i class='bx bxs-message-rounded-check'></i>
+                    <h2>Action Todo List</h2>
+                </div>
+                <div class="todo-header-right">
+                    <h3 class="show-nikname"></h3>
+                    <div>
+                        <input type="button" value="登出" class="logout-btn"> 
+                    </div>
+                </div>
+            </div>
+            <div class="todo-main-area">
+                <div class="enter-todo">
+                    <input type="text" class="todo-input">
+                    <button class="todo-add-to">+</button>
+                </div>
+                <div class="todo-empty">
+                    <h5>目前尚無待辦事項</h5>
+                    <img src="./img/todo-empty img.svg" alt="">
+                
+
+                </div>
+                <div class="todo-present">
+                    <div class="list-area">
+                        <ul class="list-state">
+                            <li ><button class="state-all" >全部</button></li>
+                            <li ><button class="state-pending" >待完成</button></li>
+                            <li ><button class="state-done" >已完成</button></li>
+                          
+                        </ul>
+                        <div class="todo-list"></div>
+                        <div class="other">
+                            <div class="total"></div>
+                            <div class="clear-all">
+                                <p class="clear-all-btn">清除所有項目</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+      
+     
+      
+    <!-- aaa@gmail.com -->
+    <!-- sss@gmail.com -->
+    <!-- sss123 -->
+    <!-- zzz@gmail.com -->
+     <!-- zzz123 -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="./all.js"></script>
+    
+</body>
+</html>

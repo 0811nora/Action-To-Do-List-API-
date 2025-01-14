@@ -1,0 +1,541 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ------------------------- */
+
+
+.hidden {
+    display: none !important;
+}
+
+.visible-flex {
+    display: flex !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+
+/* --------------- */
+
+.login-page{
+    /* display:none; */
+    display:block;
+}
+
+.register-page{
+    display:none;
+    /* display:block; */
+}
+
+.todo-page{
+    display:none;
+    /* display:block; */
+}
+
+
+.todo-done{
+	color: rgb(185, 185, 185) !important;
+	text-decoration: line-through !important;
+}
+
+.list-state{
+	display: flex;
+	gap: 10px;
+}
+
+
+
+
+
+body{
+	margin: 0;
+    padding: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo 2","Noto Sans TC", serif;
+	background-image: url("./img/yellow\ bg\(figma\)--2\ .svg"); 
+	background-color: #FFE270;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* -------登入頁面-------- */
+
+
+
+.start-page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1500px;
+	height: 100vh;
+	margin: 0 auto;
+
+}
+
+.bx-tada{
+	color: #303030;
+	font-size: clamp(20px, 5vw, 100px);
+	font-size: 900;;
+}
+
+
+.title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.title h2{
+	color: #303030;
+	font-size: clamp(18px, 4vw, 50px);
+	margin-left: 10px;
+	max-width: 600px;
+	font-weight: 900;
+}
+
+.left-content{
+	max-width: 800px;
+	min-width: 400px;
+}
+
+.left-content-img{
+	margin: 0 20px;
+}
+.left-content-img img{
+	width: 100%;
+}
+
+.login-page, .register-page{
+	max-width: 700px;
+	width: 435px;
+	min-width: 350px;
+	margin: 0 50px;
+}
+
+
+
+.login-page h2, .register-page h2{
+	font-size: clamp(16px, 3.8vw, 45px); 
+  	width: 100%;
+  	text-align: center; 
+	color: #303030;
+	margin-bottom:55px ;
+	letter-spacing: 2pt;
+	font-family: "Noto Sans TC", serif;
+	font-weight: 900;
+	white-space: nowrap;
+}
+
+.login-page h5, .register-page h5{
+	font-size: clamp(14px, 1.2vw, 18px);
+	color: #303030;
+	margin-bottom: 10px;
+	font-weight: 600;
+	
+	
+}
+
+.input-text{
+	width: 100%;
+    padding: clamp(10px, 1vw, 18px);
+    margin-bottom: 30px;
+    border-radius: 0.8vw;
+    font-size: clamp(13px, 1vw, 18px);
+	border: none;
+}
+
+.login-login-btn, .reg-btn{
+	margin: 0 auto;
+	margin-top: 40px;
+	display: block;
+	padding: 13px 50px;
+	border-radius: 10px;
+	background-color: #25253b;
+	color: #eeeeee;
+	font-weight: 800;
+	font-size: clamp(12px, 1.4vw, 20px);
+	border: none;
+}
+
+.login-login-btn:hover, .reg-btn:hover{
+	background-color: #ccb560;
+	color: #25253b;
+}
+
+.reg-login-btn, .login-reg-btn{
+	margin: 0px auto;
+	margin-top: 40px;
+	display: block;
+	background: none;
+	border: none;
+	font-size: clamp(14px, 1.4vw, 17px);
+	color: #5f5f5f;
+	padding: 3px;
+}
+
+.reg-login-btn:hover, .login-reg-btn:hover{
+	color: #25253b;
+	font-weight: bolder;
+}
+
+/* ------- todo 頁面 [header] ------- */
+
+.todo-header{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.todo-header-left, .todo-header-right{
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	gap: 25px;
+	margin: 0 40px 30px 20px;
+
+}
+
+.bx-message-rounded-check{
+	color: #303030;
+	font-size: clamp(30px, 5.5vw, 60px);
+	font-weight: bolder;
+
+	
+}
+
+
+.todo-header-left{
+	color: #303030;
+	font-size: clamp(20px, 5vw, 50px);
+	font-weight: bolder;
+	
+}
+
+.todo-header-right{
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+
+}
+
+.logout-btn{
+	font-size: 17px;
+	font-weight:bold;
+	background:none;
+	border: none;
+	color: #939393;
+	cursor: pointer;
+}
+.logout-btn:hover{
+	color: #303030;
+	font-weight: bolder;
+}
+
+.show-nikname{
+	letter-spacing: 2px;
+	border-bottom: 10px solid #ffc507;
+	line-height: 2.5;
+}
+
+/* ------- todo 頁面  ------- */
+
+.todo-main-area{
+  	max-width :1600px; 
+	min-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 100px;
+
+}
+
+.enter-todo{
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 90%;
+	position: relative;
+	margin-bottom: 80px;
+	display: flex;
+    align-items: center;
+}
+
+.todo-input{
+	width: 100%;
+	max-width: 100%; 
+	height: 55px;
+	border-radius: 10px;
+	border:none;
+	box-shadow: 3px 3px 10px #3030308a;
+	font-size: clamp(16px, 2vw, 23px);
+	padding: 0 60px 0 20px;
+	box-sizing: border-box;
+}
+
+.todo-add-to{
+	position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+	cursor: pointer;
+
+	padding: 2px 10px;
+	display: block;
+	border-radius: 8px;
+	border: none;
+	background-color: #303030;
+	color: #eeeeee;
+	font-size: 25px;
+}
+
+
+/* ----- todo [無項目時]------  */
+
+
+.todo-empty h5{
+	font-size: clamp(18px, 2vw, 28px);
+	margin: 100px 0;
+	
+}
+
+.todo-empty img{
+	max-width: 550px;
+}
+
+
+.todo-empty{
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 90%;
+	text-align: center;
+
+	
+}
+
+
+
+/* ----- todo [有項目時]------  */
+
+.todo-present{
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 90%;
+	background-color: #fffefa;
+	border-radius: 15px;
+	box-shadow: 3px 3px 10px #3030308a;
+	position: relative;
+}
+
+
+.list-state{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: clamp(16px, 1.5vw, 20px);
+	text-align: center;
+	gap:0;
+
+}
+
+.list-state li {
+    flex: 1; /* 平分寬度 */
+    text-align: center;
+}
+
+.list-state button {
+	width: 100%;
+	height: 70px;
+	font-size: clamp(16px, 1.5vw, 20px);
+	border: none;
+	background-color: #fffdf4;
+	color: #a9a9a9;
+	margin-bottom: 40px;
+	cursor: pointer;
+
+}
+
+
+.state-done{
+	border-radius: 0px 15px 0px 0px ;
+}
+
+.state-all{
+	border-radius: 15px 0px 0px 0px ;
+}
+
+.todo-list{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.todo-item{
+	display: flex; 
+	align-items :center;
+	margin: 20px;
+	font-size: clamp(14px, 1.4vw, 17px);
+	position: relative;
+	border-bottom: 0.5px solid #5f5f5f3f;
+	padding-bottom: 15px;
+	line-height: 25px;
+	letter-spacing:1.5px;
+}
+
+.todo-str{
+	display: inline-block;
+	display: flex;
+	align-items: center;
+	width: 80%;
+	margin-left: 23px;
+	color: #25253b;
+	font-size: clamp(14px, 1.6vw, 17px);
+	
+	
+}
+
+.edit-del-box{
+	display: none;
+	/* display: inline; */
+	position: absolute;
+	right:0;
+	margin: 0 15px;
+	
+}
+
+.edit-del-box i{
+	margin-left: 10px;
+	font-size: clamp(25px, 1.5vw, 30px);
+	color: #c5c4c2 ;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.edit-del-box i:hover{
+	color: #ffd505;
+}
+
+.editInput{
+	background-color: none;
+	border: 2px solid #ffd505;
+	width: 95%;
+	padding: 10px 0 10px 5px ;
+	font-size: clamp(14px, 1.6vw, 17px);
+	display: inline-block;
+}
+
+
+.saveCancel-box{
+	display: inline;
+	position: absolute;
+	right:0px;
+	margin: 0 15px;
+	z-index: 300;
+	
+}
+
+.saveCancel-box i{
+	margin-left: 10px;
+	font-size: clamp(25px, 1.5vw, 30px);
+	color: #c5c4c2 ;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.saveCancel-box .save-btn{
+	color: #56cf67;
+}
+
+.saveCancel-box .cancel-btn{
+	color: #e97878;
+}
+
+
+
+
+
+.button-style{
+	border-bottom: 3px solid #303030 !important; 
+	color: #25253b !important ;
+	font-weight: 900 !important ;
+	transition: all 100ms linear;
+	transition-delay: 100ms;
+}
+
+
+input[type="checkbox"] {
+	width: 2em;
+	height: 2rem;
+	accent-color: #ffd817e1;
+	cursor: pointer;
+  }
+  
+
+
+  /* ---- 最下方統計/全刪除按鈕----- */
+
+  .other{
+	display: flex;
+	justify-content: space-around;
+	font-size: clamp(14px, 1.6vw, 17px);
+	padding: 30px;
+	letter-spacing: 2px;
+  }
+
+  .total{
+	border-bottom: 13px solid #ffc5076e;
+  }
+
+  .clear-all-btn{
+	color: #c5c4c2 ;
+	cursor: pointer;
+  }
+
+  .clear-all-btn:hover{
+	color: #303030 ;
+	cursor: pointer;
+  }
+
