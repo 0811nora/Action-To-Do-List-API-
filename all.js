@@ -220,7 +220,6 @@ function getAllList(){
             todoPresent.classList.add("hidden");
             todoPresent.classList.remove("visible");
         }else{
-            console.log(alltodolist);
             todoEmpty.classList.add("hidden");
             todoEmpty.classList.remove("visible");
             todoPresent.classList.add("visible");
@@ -432,13 +431,32 @@ function noneEditDelBox(e){
     }
 }
 
-todoList.addEventListener("mouseover", inlineEditDelBox);
-todoList.addEventListener("mouseout", noneEditDelBox);
-todoList.addEventListener("mousedown",noneEditDelBox);
+
+
+checkWeith();
+
+window.addEventListener("resize",checkWeith);
+
+function checkWeith(){
+    if(window.innerWidth < 800){
+        todoList.addEventListener("touchend",editTodo);
+        todoList.addEventListener("touchend",delTodo);
+
+    }else if(window.innerWidth > 800){
+        todoList.addEventListener("mouseover", inlineEditDelBox);
+        todoList.addEventListener("mouseout", noneEditDelBox);
+        todoList.addEventListener("mousedown",noneEditDelBox);
+        todoList.addEventListener("click",editTodo);
+        todoList.addEventListener("click",delTodo);
+    }
+}
+
+
 
 
 // [編輯] 待辦事項
-todoList.addEventListener("mousedown", (e)=>{
+
+function editTodo(e){
     if(e.target && e.target.matches(".edit-btn")){
         todoList.removeEventListener("mouseover", inlineEditDelBox);
         
@@ -483,22 +501,14 @@ todoList.addEventListener("mousedown", (e)=>{
             todoList.addEventListener("mouseover", inlineEditDelBox);
         })
     }
-})
-
-
-
-
-
-        
-
-
+}
 
 
 
 
 // [刪除] todo 項目
 
-todoList.addEventListener("click", (e)=>{
+function delTodo(e){
     if(e.target && e.target.matches(".del-btn")){ 
         let todoId = e.target.closest(".todo-item").id;
         console.log(todoId);
@@ -522,7 +532,10 @@ todoList.addEventListener("click", (e)=>{
         })
         .catch(error => console.log(error.response))
     }
-})
+}
+
+
+    
 
 
 //刪除全部todo項目  (需要詳細了解 forEach/map/promise的用法)
