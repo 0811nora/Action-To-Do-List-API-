@@ -34,16 +34,16 @@
 ## ◾專案展示  
 
 - 登入畫面
-- ![image](https://github.com/user-attachments/assets/c259ff93-71bc-4b1b-844b-cec0bf965dd8)
+   ![image](https://github.com/user-attachments/assets/c259ff93-71bc-4b1b-844b-cec0bf965dd8)
 
 - 註冊畫面
-- ![image](https://github.com/user-attachments/assets/badaa8f0-4b55-45eb-a5f7-16cbb7cf4ccf)
+   ![image](https://github.com/user-attachments/assets/badaa8f0-4b55-45eb-a5f7-16cbb7cf4ccf)
 
 - 無待辦狀態
-- ![image](https://github.com/user-attachments/assets/9b9a7e70-855c-4943-805e-4199359f00e8)
+   ![image](https://github.com/user-attachments/assets/9b9a7e70-855c-4943-805e-4199359f00e8)
 
 - 有待辦狀態(分類)
-- ![images](https://github.com/user-attachments/assets/1ecaae2f-2df2-4bde-89f8-75ecc4fc724b)
+   ![images](https://github.com/user-attachments/assets/1ecaae2f-2df2-4bde-89f8-75ecc4fc724b)
 
 
 
