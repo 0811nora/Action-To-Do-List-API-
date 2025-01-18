@@ -43,7 +43,8 @@
 - ![image](https://github.com/user-attachments/assets/9b9a7e70-855c-4943-805e-4199359f00e8)
 
 - 有待辦狀態(分類)
-- ![images](https://github.com/user-attachments/assets/5576c0a2-16e7-41ac-b853-b949afa2b922)
+- ![image](https://github.com/user-attachments/assets/d64028ca-2841-477b-b3ef-e0b0cf92fe6f)
+
 
 
 
