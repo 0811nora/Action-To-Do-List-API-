@@ -11,7 +11,7 @@
 「Action-To-Do-List」是一款簡單易用的待辦清單應用，幫助用戶有效管理每日任務與目標。
 使用者可以自由新增、編輯、標記完成及刪除任務，透過直觀的操作介面提升生產力。
 
-✨ **[作品網頁]：https://0811nora.github.io/Action-To-Do-List-API-/)**
+✨ **[作品網頁]：https://0811nora.github.io/Action-To-Do-List-API-/**
 
 ## ◾功能特色  
 - **新增任務**：輸入內容後，快速建立新的待辦事項。  
